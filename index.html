@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Tile Inventory</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Tile Shop Inventory</h1>
+
+<button id="adminBtn">
+
+🔐 Admin Login
+
+</button>
+
+<div id="adminPanel">
+
+<input id="name" placeholder="Tile Name">
+
+<input id="size" placeholder="Size">
+
+<input id="design" placeholder="Design">
+
+<input id="boxes" type="number" placeholder="Boxes">
+
+<button id="saveBtn">
+
+Save
+
+</button>
+
+</div>
+
+<input
+
+id="search"
+
+placeholder="Search Tiles">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Size</th>
+
+<th>Design</th>
+
+<th>Boxes</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="auth.js"></script>
+
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
